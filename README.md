@@ -1,2 +1,2 @@
 # fe-course
-frontend/backend 저장소
+프론트 엔드 수업
