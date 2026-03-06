@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>웹 개발 교육 상담 문의</title>
+</head>
+<body>
+    <h1>웹 개발 교육 상담 문의</h1><br>
+    <div>HTML, CSS, JavaScript, React, 프론트엔드 교육 과정에 대해 궁금한 내용을 남겨주세요. 담당자가 확인 후 안내해드입니다.</div><br>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>상담 신청 정보</legend>
+            <div>
+                <label for="id">이름*</label>
+                <input type="text" name="name" placeholder="이름을 입력하세요">
+            </div><br>
+            <div>실명을 입력해 주세요</div><br>
+            <div>
+                <label for="email">이메일*</label>
+                <input type="email" name="email" placeholder="example@email.com">
+            </div><br>
+            <div>답변을 받을 이메일 주소를 입력해 주세요</div><br>
+            <div>
+                <label for="phone">연락처</label>
+                <input type="text" name="name" placeholder="010-0000-0000">
+            </div>
+            <div>
+                <label for="interest_class">관심 과정*</label>
+                <select name="interest_class">
+                    <option value="선택">선택하세요</option>
+                    <option value="웹개발">웹개발</option>
+                    <option value="프론트엔드개발">프론트엔드개발</option>
+                    <option value="백엔드개발">백엔드개발</option>
+                </select>
+            </div>
+            <div>
+                <label for="Q&A">문의 내용*</label>
+                <textarea name="intro"
+                cols="20" rows="2"
+                placeholder="궁금한 내용을 자세히 입력해 주세요"></textarea>
+            </div><br>
+            <div>예: 수업 일정, 수강 대상, 비용, 프로젝트 중심 수업 여부 등</div><br>
+            <div>
+                <input type="checkbox" name="authorizing" value="YES">
+                <label for="authorizing">개인정보 수집 및 이용에 동의합니다. *</label>                
+            </div>
+            <div>
+                <button type="submit">상담 문의 보내기</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
