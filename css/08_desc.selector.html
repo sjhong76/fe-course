@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <meta name="Description" Content="Descendant Selector">
+    <style>
+        /*
+            descendant selector : 조상[space]자손
+            child selector : 부모[>]자식
+            인접한 siblings selector : 기준태크[+]형제태크
+            모든 siblings selector : 기준태크[~]형제태크
+        */
+        h1 {
+            color: blue;
+            background-color: aquamarine;
+        }
+        body li ul {
+            background-color: yellow;
+        }
+        #main-menu a {
+            color: red;
+        }
+        #sub-menu a {
+            color: green;
+        }
+        #sub-menu li > a {
+            text-decoration: none;
+        }
+        li#main-menu + li {
+            background-color: tomato;
+        }
+        li#main-menu + li > a {
+            color: yellow;
+            text-decoration: none;
+        }
+        h2 + p {
+            background-color: green;
+        }
+        h2 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector</h1>
+    <nav>
+        <ul>
+            <li id="main-menu">
+                <a href="#">menu</a>
+                <ul id="sub-menu">
+                    <li><a href="#">sub-menu</a></li>
+                    <li><a href="#">sub-menu</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+        </ul>
+    </nav>
+    <h2>Sibling Selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas eligendi vel neque dolor architecto fuga et recusandae corporis mollitia itaque, provident harum modi, magnam illo iste sapiente aut sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas eligendi vel neque dolor architecto fuga et recusandae corporis mollitia itaque, provident harum modi, magnam illo iste sapiente aut sint.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas eligendi vel neque dolor architecto fuga et recusandae corporis mollitia itaque, provident harum modi, magnam illo iste sapiente aut sint.</p>
+</body>
+</html>
