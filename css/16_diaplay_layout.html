@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaplay Layout</title>
+    <meta name="description" content="Display Layout">
+    <style>
+        div {
+            margin: 0;
+            /* background-color: tomato; */
+        }
+        .d1 p {
+            margin: 0;            
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            background-color: aquamarine;
+        }
+        .d2 > div {
+            border: 1px solid blue;
+            display: flex;
+            gap: 20px;
+            /* align-items: center; */
+            justify-content: space-between;
+        }
+        .d2 p {
+            width: 200px;
+            height: 250px;
+            background-color: orange;
+        }
+        .d3 {border: 1px solid red}
+        .d3 ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            gap: 10px;
+            justify-content: center;
+        }
+        .d3 li {
+            border: 1px solid blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Layout</h1>
+    <div class="d1">
+        <h3>Layout 1 : inline-block 전환</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+    </div>
+    <div class="d2">
+        <h3>Layout 2 : flex 적용</h3>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ducimus, commodi molestias adipisci earum maxime et totam accusamus quaerat excepturi quibusdam vitae odio a quisquam ipsa modi eum corporis ipsam.</p>
+        </div>
+    </div>
+    <div class="d3">
+        <h3>Layout 3 : flex 적용</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+</body>
+</html>

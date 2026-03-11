@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Style</title>
+    <style>
+    p { margin: 50px;}
+        /* p1: 가로-200, 세로-200, 배경색 */
+    .p1 {
+        width: 200px; height: 200px;
+        background-color: aquamarine;
+        overflow: auto;
+    }
+        /* p2: 가로-300, 세로-200, 배경색 */
+    .p2 {
+        width: 300px; height: 200px;
+        background-color: rgb(202,255,246);
+    }
+        /* p3: 가로-400, 세로-200, 배경색 */
+    .p3 {
+        width: 400px; height: 200px;
+        background-color: rgb(255,127,246);
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <h1>Overflow Style</h1>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis temporibus soluta quam non voluptatem quae fugit repudiandae fugiat! Adipisci numquam alias amet ducimus officia sunt vero. Quod ea odit eveniet!</p>
+    <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis temporibus soluta quam non voluptatem quae fugit repudiandae fugiat! Adipisci numquam alias amet ducimus officia sunt vero. Quod ea odit eveniet!
+        <img src="../images/favicon.ico" alt="뽕뽕스">
+    </p>
+    <p class="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis temporibus soluta quam non voluptatem quae fugit repudiandae fugiat! Adipisci numquam alias amet ducimus officia sunt vero. Quod ea odit eveniet!</p>
+</body>
+</html>
