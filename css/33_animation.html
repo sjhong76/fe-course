@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Style</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+        }
+        .box:hover {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: changeColor 3s 0s 2;
+        }
+        @keyframes changeColor {
+            from {
+                /* 애니메이션 시작 시 스타일 정의 */
+                background-color: aquamarine;
+            }
+            /* 30% {} */
+            50% { background-color: yellow; }
+            /* 80% {} */
+            to {
+                /* 애니메이션 시작 시 스타일 정의 */
+                border-color: tomato;
+            }
+        }
+        /* box-image */
+        .box-image {
+            width: 100%;
+            height: 500px;
+            background-image: url('../images/bg01.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        img { width: 100px; height: 100px;}
+        .img1, .img2, .img3, .img4, .img5 {
+            opacity: 0;
+            animation: fadeInUp 5s ease forwards;
+        }
+        .img1 {
+            animation-delay: 1s;
+        }
+        .img2 {
+            animation-delay: 2s;
+        }
+        .img3 {
+            animation-delay: 3s;
+        }
+        .img4 {
+            animation-delay: 4s;
+        }
+        .img5 {
+            animation-delay: 5s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Style</h1>
+    <div class="box">box animation</div>
+    <div class="box-image">
+        <div>
+            <div>
+                
+            </div>
+            <img src="../images/favicon.ico" alt="ico" class="img1">
+            <img src="../images/favicon.ico" alt="ico" class="img2">
+            <img src="../images/favicon.ico" alt="ico" class="img3">
+            <img src="../images/favicon.ico" alt="ico" class="img4">
+            <img src="../images/favicon.ico" alt="ico" class="img5">
+        </div>
+    </div>
+
+</body>
+</html>
